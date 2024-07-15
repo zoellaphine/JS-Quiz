@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JavaScript Quiz</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <p class="scores">View scores</p>
+
+            <p class="timer">Time:</p>
+        </div>
+        <div class="content">
+            <div class="title" id="title">
+                <h1>Coding Quiz Challenge!</h1>
+                <p>Try to answer the following code-related questions within the time limit. <br>
+                    Keep in mind that incorrect answers will penalize your score <br>
+                    by ten seconds!
+                </p>
+                <button class="start">Start Quiz</button>
+            </div>
+            <div class="prompt">
+            <!-- I didn't see anything about needing to make our own questions
+             so if I was supposed to let me know -->
+                <div class="question" id="question1" style="display: none">
+                    <h1>Commonly used data types DO NOT include:</h1>
+                    <button class="selection">1. strings</button>
+                    <button class="selection">2. booleans</button>
+                    <button class="selection">3. alerts</button>
+                    <button class="selection">4. numbers</button>
+                </div>
+                <div class="question" id="question2" style="display: none">
+                    <h1>The condition in an if/else statement is <br>
+                        enclosed with:
+                    </h1>
+                    <button class="selection">1. quotes</button>
+                    <button class="selection">2. curly brackets</button>
+                    <button class="selection">3. parenthesis</button>
+                    <button class="selection">4. square brackets</button>
+                </div>
+                <div class="question" id="question3" style="display: none">
+                    <h1>Arrays in JavaScript can be used to store:</h1>
+                    <button class="selection">1. numbers and strings</button>
+                    <button class="selection">2. other arrays</button>
+                    <button class="selection">3. booleans</button>
+                    <button class="selection">4. all of the above</button>
+                </div>
+                <div class="question" id="question4" style="display: none">
+                    <h1>When assigning string values, they must be<br>
+                        enclosed in:
+                    </h1>
+                    <button class="selection">1. commas</button>
+                    <button class="selection">2. curly brackets</button>
+                    <button class="selection">3. quotes</button>
+                    <button class="selection">4. parenthesis</button>
+                </div>
+                <div class="question" id="question5" style="display: none">
+                    <h1>A very useful tool used during development<br>
+                        and debugging for printing content to the<br>
+                        debugger is:
+                    </h1>
+                    <button class="selection">1. JavaScript</button>
+                    <button class="selection">2. terminal/bash</button>
+                    <button class="selection">3.for loops</button>
+                    <button class="selection">4. console.log</button>
+                </div>
+            </div>
+            <div class="results" id="results" style="display: none">
+                <h1>All done!</h1>
+                <p class="score"></p>
+                <div class="entry">
+                    <p>Enter initials:</p>
+                    <textarea class="initials"></textarea>
+                    <button class="submit">Submit</button>
+                </div>
+                <p id="error" style="display: none">Please enter initials</p>
+            </div>
+            <div class="answer">
+                <div class="right" id="right" style="display: none">
+                    </hr>
+                    <p class="response">Correct!</p>
+                </div>
+                <div class="wrong" id ="wrong" style="display: none">
+                    </hr>
+                    <p class="response">Wrong!</p>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
